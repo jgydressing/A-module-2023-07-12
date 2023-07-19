@@ -1,0 +1,445 @@
+* {
+    padding: 0;
+    margin: 0;
+    width: 100% auto;
+}
+
+/* header */
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.loginout ul{
+    display: flex;
+    margin: 5px 0px 5px 0;
+    font-size: 16px;
+}
+
+.loginout > ul > li {
+    margin-left: 10px;
+    position: relative;
+    left: 1500px;
+    width: auto;
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+.logo img {
+    width: 270px;
+    height: 150px;
+}
+
+.menu ul {
+    display: flex;
+    padding-left: 500px;
+    padding-bottom: 30px;
+}
+
+.menu li {
+    margin-right: 150px;
+    color: black;
+    font-size: 20px;
+}
+
+.menu li:hover {
+    color: rgb(30, 191, 255);
+}
+
+/* slide */
+#slide {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 480px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.background {
+    background-color:   rgba(0, 0, 0, 0.775);
+    width: 100%;
+    height: 500px;
+    position: relative;
+    bottom: 500px;
+    z-index: 0;
+}
+
+.slide {
+    width: 1000px;
+    height: 500px;
+    transition: all .5s;
+    animation: slide 9s linear infinite;
+}
+    
+.list {
+    width: 1000px;
+    height: 500px;
+    position: absolute;
+    transition: all .5s;
+}
+
+.slide:hover .list:nth-child(2) {
+    transform: translateX(0%);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%)
+    }
+
+    22.5% {
+        transform: translateX(0%)
+
+    }
+   25% {
+        transform: translateX(-100%)
+    }
+
+    47.5% {
+        transform: translateX(-100%)
+
+    }
+    50% {
+        transform: translateX(-200%)
+    }
+
+    72.5% {
+        transform: translateX(-200%)
+    }
+    75% {
+        transform: translateX(-100%)
+    }
+
+    97.5% {
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(0%)
+    }
+
+}
+
+.list:nth-child(2) {
+    left: 100%;
+
+}
+.list:nth-child(3) {
+    left: 200%;
+}
+
+/* housewarming */
+
+#housewarming .text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 450px;
+    left: 450px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#housewarming {
+    position: relative;
+    width: 1000px;
+    height: 1100px;
+}
+
+.card {
+    width: 500px;
+    height: 400px;
+    transition: all .5s;
+    position: relative;
+    bottom: 400px;
+    left: 150px;
+    overflow: hidden;
+}
+
+.card2 {
+    width: 500px;
+    height: 400px;
+    transition: all .5s;
+    position: relative;
+    left: 1200px;
+    bottom: 700px;
+    overflow: hidden;
+}
+
+.card3 {
+    width: 500px;
+    height: 400px;
+    transition: all .5s;
+    position: relative;
+    left: 200px;
+    bottom: 900px;
+    overflow: hidden;
+}
+
+.card4 {
+    width: 500px;
+    height: 400px;
+    transition: all .5s;
+    position: relative;
+    bottom: 1100px;
+    left: 1200px;
+    overflow: hidden;
+}
+
+.card:hover .ex:nth-child(2) {
+    transform: translateX(0%);
+}
+
+.card2:hover .ex2:nth-child(2) {
+    transform: translateX(0%);
+}
+
+.card3:hover .ex3:nth-child(2) {
+    transform: translateX(0%);
+}
+
+.card4:hover .ex4:nth-child(2) {
+    transform: translateX(0%);
+}
+
+.ex {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    transition: all .5s;
+}
+
+.ex2 {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    transition: all .5s;
+}
+
+.ex3 {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    transition: all .5s;
+}
+
+.ex4 {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    transition: all .5s;
+}
+
+.ex:nth-child(1) {
+    border-radius: 30px 0 0 30px;
+    background-size: cover;
+    background-image: url(./housewarming_party/1_before.jpg);
+}
+.ex:nth-child(2) {
+    border-radius: 30px 0 0 30px;
+    background-size: cover;
+    background-image: url(./housewarming_party/1_after.jpg);
+    transform: translateX(100%);
+}
+
+.ex2:nth-child(1) {
+    border-radius: 30px 0 0 30px;
+    background-size: cover;
+    background-image: url(./housewarming_party/2_before.jpg);
+}
+.ex2:nth-child(2) {
+    border-radius: 30px 0 0 30px;
+    background-size: cover;
+    background-image: url(./housewarming_party/2_after.jpg);
+    transform: translateX(100%);
+}
+
+.ex3:nth-child(1) {
+    border-radius: 30px 0 0 30px;
+    background-size: cover;
+    background-image: url(./housewarming_party/3_before.jpg);
+}
+.ex3:nth-child(2) {
+    border-radius: 30px 0 0 30px;
+    background-size: cover;
+    background-image: url(./housewarming_party/3_after.jpg);
+    transform: translateX(100%);
+}
+
+.ex4:nth-child(1) {
+    background-size: cover;
+    background-image: url(./housewarming_party/4_before.jpg);
+    border-radius: 30px 0 0 30px;
+}
+.ex4:nth-child(2) {
+    background-size: cover;
+    background-image: url(./housewarming_party/4_after.jpg);
+    transform: translateX(100%);
+    border-radius: 30px 0 0 30px;
+}
+
+.info {
+    position: relative;
+    left: 700px;
+    bottom: 800px;
+}
+
+.info2 {
+    text-align: right;
+    position: relative;
+    left: 150px;
+    bottom:1100px;
+}
+
+.info3 {
+    position: relative;
+    left: 750px;
+    bottom: 1300px;
+}
+
+.info4 {
+    text-align: right;
+    position: relative;
+    left: 150px;
+    bottom: 1500px;
+}   
+
+.info h5 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
+
+.info2 h5 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
+
+.info3 h5 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
+
+.info4 h5 {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
+
+.star-point h4 {
+    color: orange;
+}
+
+.text h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* specialist */
+#expert {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    transform-style:preserve-3d;
+}
+
+.round .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+    border-radius: 30px;
+    backface-visibility: hidden;
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.round .face.front {
+    width: 300px;
+    height: 500px;
+    background-image: url(./specialist/specialist1.jpg);
+    background-size: cover
+}
+
+.round:hover .face.front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.round .face.back {
+    width: 300px;
+    height: 500px;
+    transform: perspective(500px) rotateY(180deg);
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+.round:hover .face.back {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+/* review */
+
+#review {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    margin-top: 100px;
+    background-size: cover;
+    background-image: url(./livingroom-1032733_1280.jpg);
+}
+
+.one {
+    margin-right: 200px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 200px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.two {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    height: 300px;
+    margin-top: 150px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 200px;
+}
+
+footer h5 {
+    color: rgba(255, 255, 255, 0.745);
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.873);
+    font-family: 'Courier New', Courier, monospace;
+}
